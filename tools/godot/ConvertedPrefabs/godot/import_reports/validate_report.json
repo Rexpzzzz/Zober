@@ -1,0 +1,89 @@
+{
+  "files": [
+    {
+      "file": "Mesh_fbx_candidate_1.glb",
+      "size": 3492,
+      "meshes": 1,
+      "primitives": 1,
+      "status": "ok"
+    },
+    {
+      "file": "Mesh_fbx_candidate_1_fromobj_assimp.assimp.glb",
+      "size": 3408,
+      "meshes": 1,
+      "primitives": 1,
+      "status": "ok"
+    },
+    {
+      "file": "Mesh_fbx_candidate_1_fromobj_assimp.glb",
+      "size": 3408,
+      "meshes": 1,
+      "primitives": 1,
+      "status": "ok"
+    },
+    {
+      "file": "Sound_fbx_candidate_6.glb",
+      "size": 9216,
+      "meshes": 1,
+      "primitives": 1,
+      "status": "ok"
+    },
+    {
+      "file": "Sound_fbx_candidate_6_fromobj_assimp.assimp.glb",
+      "size": 9136,
+      "meshes": 1,
+      "primitives": 1,
+      "status": "ok"
+    },
+    {
+      "file": "Sound_fbx_candidate_6_fromobj_assimp.glb",
+      "size": 9136,
+      "meshes": 1,
+      "primitives": 1,
+      "status": "ok"
+    },
+    {
+      "file": "Textures_fbx_candidate_43.glb",
+      "size": 5908,
+      "meshes": 1,
+      "primitives": 1,
+      "status": "ok"
+    },
+    {
+      "file": "Textures_fbx_candidate_43_fromobj_assimp.glb",
+      "size": 1304,
+      "meshes": 1,
+      "primitives": 1,
+      "status": "ok"
+    },
+    {
+      "file": "Textures_fbx_candidate_44.glb",
+      "size": 5908,
+      "meshes": 1,
+      "primitives": 1,
+      "status": "ok"
+    },
+    {
+      "file": "Textures_fbx_candidate_44_fromobj_assimp.glb",
+      "size": 1304,
+      "meshes": 1,
+      "primitives": 1,
+      "status": "ok"
+    },
+    {
+      "file": "Textures_fbx_candidate_47_fromobj_assimp.assimp.glb",
+      "size": 3740,
+      "meshes": 1,
+      "primitives": 1,
+      "status": "ok"
+    },
+    {
+      "file": "Textures_fbx_candidate_47_fromobj_assimp.glb",
+      "size": 3740,
+      "meshes": 1,
+      "primitives": 1,
+      "status": "ok"
+    }
+  ],
+  "any_failed": false
+}
