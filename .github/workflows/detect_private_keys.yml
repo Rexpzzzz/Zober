@@ -1,0 +1,35 @@
+name: Detect private key leaks
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  gitleaks:
+    name: Gitleaks scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run gitleaks
+        uses: zricethezav/gitleaks-action@v1
+        with:
+          args: --path=. --verbose
+
+  grep-scan:
+    name: Grep-based private key scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Search for private key headers
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "Scanning repository for likely private key markers..."
+          matches=$(git grep -I --line-number -n -e '-----BEGIN OPENSSH PRIVATE KEY-----' -e '-----BEGIN RSA PRIVATE KEY-----' -e '-----BEGIN EC PRIVATE KEY-----' -e '-----BEGIN PRIVATE KEY-----' || true)
+          if [ -n "${matches}" ]; then
+            echo "Potential private key(s) found:" >&2
+            echo "${matches}" >&2
+            exit 1
+          else
+            echo "No likely private keys found."
+          fi
